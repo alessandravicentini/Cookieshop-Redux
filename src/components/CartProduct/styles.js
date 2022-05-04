@@ -7,7 +7,7 @@ justify-content: space-evenly;
 align-items: center;
 
 height: 100px;
-width: 70%;
+width: 80%;
 
     > img{
         height: 100%;
@@ -15,7 +15,7 @@ width: 70%;
     }
 
     > svg{
-        width: 80px;
+        width: 50px;
 
         cursor: pointer;
         transition: 0.3s;
@@ -37,6 +37,32 @@ width: 70%;
 
     span{
         text-align: right;
+    }
+
+    > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        width: 100px;
+
+        margin-left: 20px;
+
+        > span{
+            border: none;
+
+            font-size: small;
+            text-align: center;
+        }
+
+        > svg{
+            cursor: pointer;
+            
+            margin-left: 5px;
+        }
+
+       
     }
 
 `

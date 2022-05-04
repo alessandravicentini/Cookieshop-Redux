@@ -48,7 +48,7 @@ width: 70%;
 
 margin-bottom: 20px;
 
-overflow: auto;
+overflow: hidden;
 
 border-bottom: 1px solid #222;
 

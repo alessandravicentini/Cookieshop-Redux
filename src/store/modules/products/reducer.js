@@ -2,7 +2,7 @@ import cookies from "../../../dataBase/db";
 
 const defaultState = cookies
 
-const productsReducer = (state = defaultState, action) => {
+const productsReducer = (state = defaultState) => {
     return state
 }
   

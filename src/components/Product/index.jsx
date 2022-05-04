@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../store/modules/cart/actions";
 
 
-const Product = ({ product, key }) => {
+const Product = ({ product }) => {
 
   const dispatch = useDispatch();
 

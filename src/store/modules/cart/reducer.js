@@ -2,15 +2,15 @@ const cartReducer = (state = [], action) => {
 
    switch (action.type) {
      case "@cart/ADD":
-       const { product } = action;
-       return [...state, product];
+       return [...state, action.product];
  
      case "@cart/REMOVE":
-       const { id } = action;
-       const newList = state.filter((product) => product.id !== id);
- 
-       return newList;
- 
+       const index = state.findIndex((item) => item === action.product)
+
+       const newList = [...state]
+       newList.splice(index, 1)
+       return newList
+
      default:
        return state;
    }

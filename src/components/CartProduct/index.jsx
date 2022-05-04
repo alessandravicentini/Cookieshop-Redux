@@ -1,13 +1,16 @@
 import { Container } from './styles';
-import { FaTrash } from 'react-icons/fa'
+import { AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai'
 
-import { useDispatch } from 'react-redux';
-import { removeFromCart } from '../../store/modules/cart/actions'
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart, removeFromCart } from '../../store/modules/cart/actions'
 
 
-export const CartProduct = ({ product, index }) => {
+export const CartProduct = ({ product }) => {
 
     const dispatch = useDispatch();
+
+    const cart = useSelector(({ cart }) => cart);
+    const productQtt = cart.filter((item) => item === product).length
 
     const priceFormat = Intl.NumberFormat('pt-br', {style: 'currency', currency: 'BRL'}).format(product.price)
 
@@ -16,7 +19,11 @@ export const CartProduct = ({ product, index }) => {
             <img src={product.img} alt={product.name}/>
             <p>{product.name}</p>
             <span>{priceFormat}</span>
-            <FaTrash onClick={() => dispatch(removeFromCart(index))}/>
+            <div>
+            <span>Qtd: {productQtt}</span>
+                <AiOutlineMinusCircle size={20} onClick={() => dispatch(removeFromCart(product))}/>
+                <AiOutlinePlusCircle size={20} onClick={() => dispatch(addToCart(product))}/>
+            </div>
         </Container>
     )
 }

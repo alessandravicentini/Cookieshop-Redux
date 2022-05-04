@@ -9,7 +9,6 @@ import laranja from '../assets/images/laranja.png'
 
 const cookies = [
     {
-        id: 1,
         name: 'Ao leite',
         price: 7,
         details: 'Cookie tradicional com baunilha e gotas de chocolate ao leite',
@@ -17,7 +16,6 @@ const cookies = [
         img: aoLeite
     },
     {
-        id: 2,
         name: 'Meio amargo',
         price: 7,
         details: 'Cookie de cacau com gotas de chocolate meio amargo',
@@ -25,7 +23,6 @@ const cookies = [
         img: meioAmargo
     },
     {
-        id: 3,
         name: 'Oreo',
         price: 7,
         details: 'Cookie com pedaços de biscoito Oreo',
@@ -33,7 +30,6 @@ const cookies = [
         img: oreo
     },
     {
-        id: 4,
         name: 'Café e caramelo',
         price: 7,
         details: 'Cookie de café com gotas de caramelo salgado',
@@ -41,7 +37,6 @@ const cookies = [
         img: cafe
     },
     {
-        id: 5,
         name: 'Red Velvet',
         price: 7,
         details: 'Cookie de cacau com gotas de chocolate branco',
@@ -49,7 +44,6 @@ const cookies = [
         img: redVelvet
     },
     {
-        id: 6,
         name: 'Damasco com amêndoas',
         price: 8,
         details: 'Cookie com gotas de chocolate branco, lascas de amêndoas e pedaços de damasco',
@@ -57,7 +51,6 @@ const cookies = [
         img: damasco
     },
     {
-        id: 7,
         name: 'Choconozes',
         price: 8,
         details: 'Cookie de cacau com gotas de chocolate meio amargo e nozes',
@@ -65,7 +58,6 @@ const cookies = [
         img: choconozes
     },
     {
-        id: 8,
         name: 'Laranja Dark',
         price: 8,
         details: 'Cookie de cacau black com gotas de chocolate meio amargo e raspas de laranja',
